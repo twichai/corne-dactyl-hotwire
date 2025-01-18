@@ -1,6 +1,7 @@
-#include "corne.dtsi" // The shared dtsi file is included in the overlay
+#include "dcorne.dtsi" // The shared dtsi file is included in the overlay
 
-// Label of the right kscan node in the dtsi
+// Label of the left kscan node in the dtsi
+
 &kscan0 {
     col-gpios
         = <&pro_micro 20 GPIO_ACTIVE_HIGH>
@@ -11,8 +12,4 @@
         , <&pro_micro 16 GPIO_ACTIVE_HIGH>
         , <&pro_micro 10 GPIO_ACTIVE_HIGH>
         ;
-};
-
-&default_transform {
-    col-offset = <5>;
 };
