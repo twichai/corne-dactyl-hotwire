@@ -9,6 +9,15 @@
 #include <dt-bindings/zmk/keys.h>
 
 / {
+    combos {
+        compatible = "zmk,combos";
+
+        tab {
+            bindings = <&kp TAB>;
+            key-positions = <24 25>;
+        };
+    };
+
     keymap {
         compatible = "zmk,keymap";
 
@@ -36,12 +45,12 @@
 
         layer_2 {
             bindings = <
-        &trans  &kp AT_SIGN       &kp HASH        &kp DOLLAR            &kp PERCENT                    &kp LCTRL  &kp AMPERSAND          &kp ASTERISK     &kp EXCLAMATION    &trans
-&trans  &trans  &kp LEFT_BRACKET  &kp LEFT_BRACE  &kp LEFT_PARENTHESIS  &kp MINUS                      &kp PLUS   &kp RIGHT_PARENTHESIS  &sk RIGHT_BRACE  &kp RIGHT_BRACKET  &trans                &trans
-&trans  &trans  &trans            &trans          &kp EQUAL             &trans                         &trans     &trans                 &trans           &trans             &kp NON_US_BACKSLASH  &trans
+           &trans    &kp AT_SIGN       &kp HASH        &kp DOLLAR            &kp PERCENT                    &kp LCTRL       &kp AMPERSAND          &kp ASTERISK     &kp EXCLAMATION    &trans
+&trans     &trans    &kp LEFT_BRACKET  &kp LEFT_BRACE  &kp LEFT_PARENTHESIS  &kp MINUS                      &kp PLUS        &kp RIGHT_PARENTHESIS  &sk RIGHT_BRACE  &kp RIGHT_BRACKET  &trans                &trans
+&sk LSHFT  &sk LALT  &sk LGUI          &sk LCTRL       &kp EQUAL             &trans                         &kp LEFT_ARROW  &kp DOWN               &kp UP_ARROW     &sk RIGHT          &kp NON_US_BACKSLASH  &trans
 
-                &trans            &trans          &trans                &trans                         &trans     &trans                 &trans           &trans
-                                                                                     &trans    &trans
+                     &trans            &trans          &trans                &trans                         &trans          &trans                 &trans           &trans
+                                                                                          &trans    &trans
             >;
         };
     };
