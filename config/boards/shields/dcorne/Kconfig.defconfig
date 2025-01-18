@@ -1,15 +1,15 @@
-if CORNE_LEFT
+if DCORNE_LEFT
 
 # Name must be less than 16 characters long!
 config ZMK_KEYBOARD_NAME
-    default "corne"
+    default "dcorne"
 
 config ZMK_SPLIT_ROLE_CENTRAL
     default y
 
 endif
 
-if CORNE_LEFT || CORNE_RIGHT
+if DCORNE_LEFT || DCORNE_RIGHT
 
 config ZMK_SPLIT
     default y
