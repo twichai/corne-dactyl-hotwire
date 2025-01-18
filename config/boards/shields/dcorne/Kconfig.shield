@@ -1,6 +1,6 @@
 # No whitespace after the comma or in your part name!
 config DCORNE_LEFT
-    def_bool $(shields_list_contains,dcoren_left)
+    def_bool $(shields_list_contains,dcorne_left)
 
 # No whitespace after the comma or in your part name!
 config DCORNE_RIGHT
